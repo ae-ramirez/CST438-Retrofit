@@ -13,7 +13,7 @@ public class IntentFactory {
             case "DemoActivity":
                 return DemoActivity.getIntent(context, extraValue);
             default:
-                return new  Intent(context, MainActivity.class);
+                return LoginActivity.getIntent(context, extraValue);
         }
     }
 }

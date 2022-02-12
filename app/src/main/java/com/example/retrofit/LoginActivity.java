@@ -2,12 +2,14 @@ package com.example.retrofit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
 public class LoginActivity extends AppCompatActivity {
+    public static final String ACTIVITY_LABEL = "MAIN_ACTIVITY";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,5 +33,12 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = IntentFactory.getIntent("DemoActivity", this.getApplicationContext(), message);
 
         startActivity(intent);
+    }
+
+    public static Intent getIntent(Context context, String toastValue) {
+        Intent intent = new Intent(context, LoginActivity.class);
+        intent.putExtra(LoginActivity.ACTIVITY_LABEL, toastValue);
+
+        return intent;
     }
 }
