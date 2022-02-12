@@ -15,8 +15,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Display the users name and a small message
         String toastValue = getIntent().getStringExtra(ACTIVITY_LABEL);
-        Toast.makeText(this, toastValue, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, toastValue, Toast.LENGTH_LONG).show();
     }
 
     public static Intent getIntent(Context context, String toastValue) {

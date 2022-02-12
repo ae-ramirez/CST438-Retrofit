@@ -37,11 +37,26 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="200dp"
         android:fontFamily="sans-serif-black"
-        android:onClick="DoLogin"
+        android:onClick="attemptLogin"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lUsername" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:fontFamily="sans-serif-black"
+        android:onClick="attemptNotLogin"
+        android:text="Don't Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lUsername"
+        app:layout_constraintVertical_bias="0.99" />
 </androidx.constraintlayout.widget.ConstraintLayout>

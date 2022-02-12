@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/book_item.xml" value="0.36" />
+        <entry key="app/src/main/res/layout/activity_demo.xml" value="0.35989583333333336" />
         <entry key="app/src/main/res/layout/activity_login2.xml" value="0.17299898682877407" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22552083333333334" />
         <entry key="app/src/main/res/layout/fragment_booksearch.xml" value="0.22552083333333334" />

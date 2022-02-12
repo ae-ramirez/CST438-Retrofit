@@ -15,10 +15,20 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login2);
     }
 
-    public void DoLogin(View view) {
+    public void attemptLogin(View view) {
         String username = ((EditText) findViewById(R.id.lUsername)).getText().toString();
         String message = "Who needs a password anyways, " + username;
+        if (username.length() == 0) message += "or a username";
+
         Intent intent = IntentFactory.getIntent("MainActivity", this.getApplicationContext(), message);
+
+        startActivity(intent);
+    }
+
+    public void attemptNotLogin(View v) {
+        String username = ((EditText) findViewById(R.id.lUsername)).getText().toString();
+        String message = "Nothing to see here";
+        Intent intent = IntentFactory.getIntent("DemoActivity", this.getApplicationContext(), message);
 
         startActivity(intent);
     }
