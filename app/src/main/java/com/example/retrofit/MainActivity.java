@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, toastValue, Toast.LENGTH_SHORT).show();
     }
 
-
     public static Intent getIntent(Context context, String toastValue) {
         Intent intent = new Intent(context, MainActivity.class);
         intent.putExtra(MainActivity.ACTIVITY_LABEL, toastValue);
